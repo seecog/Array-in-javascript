@@ -1,0 +1,53 @@
+<html>
+
+<script>
+
+var arr1 = [];
+
+//To add a new element to array (push)
+arr1.push(10);
+arr1.push(20);
+arr1.push(30);
+console.log('The array is ',arr1);
+//To remove element we have the pop method
+arr1.pop();
+arr1.pop();
+console.log('The new array is ',arr1);
+
+//To add an elment at the start of array
+arr1.unshift(100);
+arr1.unshift(200);
+arr1.unshift(300);
+console.log('The new array after adding at first is ',arr1);
+
+//shift method used to remove from the first position
+arr1.shift();
+console.log('The new array after adding at first is ',arr1);
+
+//splice at index ()
+var arr2 = [10,20,30,40,50];
+arr2.splice(2,1);
+console.log('The new array after adding at first is ',arr2);
+
+
+var arr3 = [10,20,30,40,50];
+/*arr3.splice(2,2);
+console.log('The new array after adding at first is ',arr3);*/
+
+arr3.splice(2,-1,1000);
+console.log('The new array after adding at first is ',arr3);
+
+
+var r1 = [1,2];
+var r2 = [7,8];
+var r3 = r1*r2;
+console.log('The new ',typeof r3);
+
+//join method in javascript
+var arr1 = [11,33,55];
+var something1 = arr1.join("*****");
+console.log('The newthing is ',something1);
+
+</script>
+
+</html>

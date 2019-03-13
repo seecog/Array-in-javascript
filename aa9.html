@@ -1,0 +1,30 @@
+<html>
+
+<script>
+//map : used to ttransform an array
+
+var arr1 = [2,4,7];
+arr1.forEach(function(x){
+console.log(x*2)
+});
+
+var arr2 = arr1.map(function(x){
+    return x*2;
+})
+//console.log('The new array is ',arr2);
+
+var arr3 = [];
+for(var i=0;i<arr1.length;i++){
+
+for(var j=0;j<i+1;j++){
+arr3.push(arr1[i])
+}
+
+}
+
+console.log('The final array is ',arr3);
+
+
+</script>
+
+</html>

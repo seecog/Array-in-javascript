@@ -1,0 +1,24 @@
+<html>
+
+<script>
+
+var arr1 = [11,22,54,56];
+//every means it will check for all teh elements. If any element fails it will return false
+var stt = arr1.every(function(x){
+return x>30;
+})
+console.log('The status is ',stt);
+
+
+//some 
+var creditStt = arr1.some(function(x){
+    return x>50;
+})
+console.log('The new status is ',creditStt);
+
+
+var arr1 = [11,33,1,44,2,7,1,87];
+console.log('The index of 1 is '+arr1.indexOf(1));
+console.log('The index of 1 is '+arr1.lastIndexOf(1));
+</script>
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<script>
+//
+var car1 = 'Opel';
+var car2 = 'Corsa';
+var arr1 = ['Opel','Corsa'];
+console.log('The first car name is '+arr1[0])
+//here ar is an object
+//object
+var arr2 = {
+name : 'Opel'
+};
+console.log('The first car name is '+arr2.name)
+
+// Array in js is treated as an object
+console.log('The type is ',typeof arr1)
+
+//How we can differentiate between the array and an real object
+console.log('Type of arr1 ',typeof arr1);
+console.log('Type of arr2 ',typeof arr2);
+
+//Array.isArray() in latest ECMA standard
+console.log('The type of arr1 ',Array.isArray(arr1))
+console.log('The type of arr2 ',Array.isArray(arr2))
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<script>
+/*Adding new element at higher index creates undefined holes in array
+a)Write a programme to create an array of size 4. Add the element at 10th index. Print all.
+*/
+
+var arr = [1,4];
+console.log('The size of array is ',arr);
+arr[7] = 100;
+console.log('The size of array is ',arr);
+
+
+var arr7 = [100,200,300,400];
+delete arr7[3];
+console.log('The final array is ',arr7);
+//Through delete method , the size of array do not change. They only put empty there
+
+
+</script>
+
+</html>

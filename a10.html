@@ -1,0 +1,44 @@
+<html>
+
+<script>
+var arr1 = [2,4,1,56,4,55,34];
+//let us find the 4 inside array'
+
+for(var i=0;i<arr1.length;i++){
+    if(arr1[i]==4){
+        console.log(i,"== found")
+    }
+}
+
+var arr2 = arr1.filter(function(x){
+    return x==4;
+})
+console.log("The new array is ",arr2);
+
+var emps = [
+{
+    name : "Mohan",
+    age : 21,
+    sal : 200
+},
+{
+    name : "Sohan",
+    age : 22,
+    sal : 100
+},
+{
+    name : "Rohan",
+    age : 21,
+    sal : 60
+}
+
+]
+
+var newEmps = emps.find(function(x){
+return x.sal>75;
+})
+//find returns the first occurance of elemnt, while the filter retuns the array of occurances
+
+console.log('The new array is ',newEmps.length)
+</script>
+</html>
